@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repruebe a Octavio por favor</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: 'Manrope', sans-serif;
+        }
+        div {
+            height: 270px;
+            width: 270px;
+            margin: auto;
+        
+           
+        }
+
+        img {
+            object-fit:cover;
+            width: 100%;
+            height: 100%;
+            
+        }
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            margin: 60px;
+            color:darkgreen;
+        }
+        .title {
+            text-align: center;
+            font-size: 70px;
+            margin: 60px;
+            color:#4DDB4A;
+            font-family: 'Lobster', cursive;
+        }
+		
+		
+    </style>
+
+    <script type="text/javascript">
+
+        if (window.addEventListener) {
+            var codigo = "";
+            window.addEventListener("keydown", function (e) {
+                codigo += String.fromCharCode(e.keyCode);
+                if (e.keyCode == 13) {
+                    window.location = "mostrar_producto.php?codigo=" + codigo;
+                    codigo = "";
+                }
+            }, true);
+        }
+    </script>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+
+<body>
+    <h1 class="title">Súper del Sur</h1>
+    <div>
+        <img src="img/barcode-scan.gif" alt="" width="" height="">
+    </div>
+    <h1>Favor de ingresar el código de barras abajo</h1>
+</body>
+
+</html>
